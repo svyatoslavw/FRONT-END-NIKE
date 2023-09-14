@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nike Clone NextJS | Frontend
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Nike store clone
+This repository is a clone of Nike's online store, created as part of training and demonstration of web development and design skills. The project was developed using the following technologies: [SCSS, TypeScript].
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## About the project
+### Project Goal
 
-## Learn More
+The goal of this project is to:
 
-To learn more about Next.js, take a look at the following resources:
+  1. Practice web development.
+  2. Create a realistic clone application to demonstrate web design and programming skills
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+In this Nike store clone, the following features are implemented:
+  1. Browsing the product catalog
+  2. Adding items to the cart
+  3. Checkout process (monobank integration)
+  4. Admin panel
 
-## Deploy on Vercel
+## How it looks like
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+CatalogPage
+![CatalogPage](https://github.com/Svyatoslavq/FRONT-END-NIKE/blob/main/design/1.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ProfilePage
+![ProfilePage](https://github.com/Svyatoslavq/FRONT-END-NIKE/blob/main/design/2.png)
+
+DashboardPage
+![DashboardPage](https://github.com/Svyatoslavq/FRONT-END-NIKE/blob/main/design/3.png)
+
+EditProductPage
+![EditProductPage](https://github.com/Svyatoslavq/FRONT-END-NIKE/blob/main/design/4.png)

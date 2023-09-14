@@ -1,0 +1,14 @@
+.file {
+  @apply shadow px-4 py-2 my-8;
+}
+
+.h1 {
+  @apply text-xl font-semibold mb-6;
+}
+
+.label {
+  @apply block;
+}
+.input {
+  @apply cursor-pointer my-2 block text-sm text-black file:mr-4 file:py-2 file:px-2 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary file:bg-opacity-20 file:text-primary file:text-opacity-80;
+}

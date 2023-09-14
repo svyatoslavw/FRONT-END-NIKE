@@ -1,0 +1,8 @@
+.actions {
+  @apply flex items-center gap-4;
+}
+
+.buttonStyle {
+  @apply border-none bg-transparent text-xl opacity-70
+    outline-none transition-opacity hover:opacity-100 cursor-pointer;
+}

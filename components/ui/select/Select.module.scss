@@ -1,0 +1,67 @@
+.select {
+  @apply relative w-max text-black text-base;
+
+  > button {
+    @apply flex items-center;
+
+    > b {
+      @apply mr-2 font-semibold;
+    }
+
+    > svg {
+      @apply ml-4;
+    }
+  }
+
+  /* Начальное состояние списка */
+  > ul {
+    @apply absolute right-0 z-20 w-max;
+    top: calc(100% + 1rem);
+
+    /* Используйте анимацию для выезда списка */
+    animation: slideInTop 0.15s forwards ease-in-out;
+    transform: translateY(0);
+    opacity: 0;
+
+    /* Остальные стили для списка */
+    > li {
+      @apply block w-full bg-gray-100 px-7 py-2 text-center shadow-md transition-colors duration-200 ease-linear text-black;
+
+      /* Остальные стили для элементов списка */
+
+      /* Остальные стили для элементов списка */
+      &:hover:not(&.active) {
+        @apply bg-gray-300;
+      }
+
+      &.active {
+        > button {
+          @apply underline;
+        }
+      }
+      &:first-child {
+        @apply rounded-t-xl;
+      }
+      &:last-child {
+        @apply rounded-b-xl;
+      }
+
+      // @for $i from 1 through 4 {
+      //   &:nth-child(#{$i}) {
+      //     animation-delay: 0.1s * $i;
+      //   }
+      // }
+    }
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

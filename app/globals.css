@@ -1,0 +1,84 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Для Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.menu {
+  animation: opacity 0.6s ease-in-out;
+  @apply z-50;
+}
+
+.open-menu {
+  animation: openMenu 0.5s ease-in-out;
+}
+
+.close-menu {
+  animation: closeMenu 0.5s ease-in-out;
+}
+
+@keyframes openMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes closeMenu {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: unset;
+  margin: unset;
+}
+
+li {
+  padding: 14px;
+  transition: all linear 0.3s;
+}
+
+li:hover {
+  background: gray;
+  cursor: pointer;
+  color: #fff;
+}
+input[type='text']:disabled {
+  background: #ecececfd;
+}

@@ -1,0 +1,27 @@
+.containerTop {
+  @apply bg-secondary font-light flex items-center justify-between px-12 w-full h-9;
+}
+
+.link {
+  @apply px-2 no-underline text-xs;
+}
+.link2 {
+  @apply no-underline text-xl hover:border-b-2 hover:border-black hover:pt-0.5 duration-75;
+}
+.link3 {
+  @apply hover:bg-slate-200 p-1 rounded-full;
+}
+
+.linkLine {
+  @apply border-r border-gray-400 h-4;
+}
+.containerBottom {
+  @apply font-medium flex w-full h-16 bg-white space-x-2 justify-between px-7 items-center;
+  .menu {
+    @apply gap-9 flex items-center font-semibold;
+  }
+}
+
+.carousel {
+  @apply font-medium flex w-full h-14 bg-secondary space-x-5 justify-center px-12 items-center;
+}

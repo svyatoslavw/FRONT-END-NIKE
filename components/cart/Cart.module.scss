@@ -1,0 +1,26 @@
+.wrapper-cart {
+  .heading {
+    .badge {
+      @apply mr-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-600 text-sm text-white;
+    }
+    .text {
+      @apply tracking-widest font-medium;
+    }
+  }
+  .cart {
+    @apply p-5 absolute right-10 shadow rounded;
+    top: calc(100% + 1rem);
+  }
+}
+.item {
+  @apply mb-5 items-center gap-5 my-3 bg-secondary p-3 rounded-lg bg-opacity-30;
+}
+.name {
+  @apply max-w-full truncate tracking-wider;
+}
+.size {
+  @apply text-sm;
+}
+.price {
+  @apply text-xl items-center flex justify-between w-full font-semibold;
+}

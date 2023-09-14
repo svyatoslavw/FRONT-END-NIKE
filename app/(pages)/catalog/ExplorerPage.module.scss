@@ -1,0 +1,24 @@
+.catalog {
+  @apply flex w-full;
+
+  > aside {
+    @apply w-0 whitespace-nowrap opacity-0;
+    transition: width 300ms ease-in, opacity 300ms ease-in;
+  }
+
+  > section {
+    @apply w-full;
+    transition: width 300ms ease-in;
+  }
+
+  &.filterOpened {
+    @apply gap-5;
+
+    > aside {
+      @apply w-1/6 opacity-100;
+    }
+    > section {
+      transition: width 300ms ease-in;
+    }
+  }
+}

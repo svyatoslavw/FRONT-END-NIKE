@@ -1,0 +1,29 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.type {
+  @apply capitalize text-2xl font-bold text-center;
+}
+
+.customBtn {
+  @apply px-14 py-2 bg-secondary hover:bg-opacity-70 cursor-pointer duration-300;
+}
+.resetBtn {
+  @apply border-none capitalize text-sm bg-transparent block duration-300 cursor-pointer;
+}

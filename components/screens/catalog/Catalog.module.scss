@@ -1,0 +1,6 @@
+.container {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  sm:grid-rows-none md:grid-rows-none lg:grid-rows-none xl:grid-rows-none gap-4 mx-auto;
+}
+.notFound {
+  @apply text-5xl flex justify-center w-full font-semibold mt-6;
+}
